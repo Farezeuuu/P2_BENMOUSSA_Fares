@@ -11,7 +11,7 @@ header{
 }
  
 header img{
-    margin-left: 20px;
+    margin-left: 50px;
 }
  
 nav ul{
@@ -52,7 +52,7 @@ nav a:hover{
     display: flex;
     align-items: stretch;
     margin-bottom: 10px;
-    margin-left: 12px;
+    margin-left: 0px;
 }
  
 #logorecherche{
@@ -122,7 +122,7 @@ button i{
  
 span {
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 6px;
 }
  
@@ -141,54 +141,87 @@ span {
  
 .conteneur{
     display: flex;
-    flex-direction:wrap;
-    padding-left:30px;
-    padding-right:30px;
+    flex-direction: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
 }
- 
+/*Hébergement*/
+
 #hebmarseille{
     border: 2px solid #d8d8d8;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding-left: 0px;
-    width: 800px;
+    width: 65%;
+    justify-content: space-evenly;
+}
+
+#hebimg{
+    padding: 3px 3px 3px 3px;
 }
  
 #hébergement {
     display: flex;
     flex-wrap:wrap;
+    justify-content: space-evenly;
 }
- 
-#marseille {
-    padding-left:40px;
-}
- 
-#hébergement figure{
+
+.mars{
+    width: 30%;
+    margin-bottom: 3%;
     border: 2px solid #d8d8d8;
     border-radius: 10px;
     background-color: white;
     text-decoration: none;
     color: black;
-    width: 175px;
 }
  
+#marseille {
+    padding-left:40px;
+}
+
+ 
 #hébergement img{
+    width: 100%;
     height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding-left:7px;
-    padding-top:5px
+    padding-top: 3px;
+    padding-right: 5px;
 }
-#hébergement figcaption{
+
+#hébergement mark{
+    color: #0065FC;
+    background-color: white;
+}
+
+#figcaption{
     padding-left:7px;
 }
+
+/*Les plus populaires*/
  
 #lespluspopulaires{
     border: 2px solid #d8d8d8;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding-left: 0px;
-    width: 300px;
+    width: 30%;
+}
+
+.pop{
+    width: 30%;
+    margin-bottom: 3%;
+    border: 2px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+#popimg{
+    display: flex;
 }
  
 #populaires figure{
@@ -198,7 +231,7 @@ span {
     background-color: white;
     text-decoration: none;
     color: black;
-    width: 200px;
+    width: 30%;
 }
  
 #populaires img{
@@ -212,31 +245,59 @@ span {
     color: black
 }
  
-#hébergement mark{
-    color: #0065FC;
-    background-color: white;
-}
  
 #populaires mark{
     color: #0065FC;
     background-color: white;
 }
- 
-#activités figure{
-    border:2px solid #d8d8d8;
-    border-radius: 50px;
-    color: black;
+
+#plus{
+    text-align: left;
+    padding-left: 3%;
 }
+
+
+/*Activités*/
+ 
  
 #activités img{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    width: 200px;
+    width: 100%;
 }
- 
+
+.act{
+    width: 98%;
+    border: 2px solid #d8d8d8;
+    border-radius: 30px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+#activités figcaption{
+    padding-left: 5px;
+}
+
+#activités{
+    border: 2px solid #d8d8d8;
+    display:flex;
+}
+
+
  
 /*Footer*/
  
-div li{
-    list-style-type: none;
+#footer{
+    background-color: #f2f2f2;
+}
+
+a{
+    color: black;
+}
+
+.footinfo{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15% 0 2%;
 }
